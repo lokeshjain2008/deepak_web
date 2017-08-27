@@ -1,0 +1,19 @@
+mixin navLink(link, name)
+  li(
+    class={current: name == activePage}
+    ) 
+    a(
+      href=link  
+    ) #{name}
+
+nav#nav
+  ul
+    +navLink('index.html','Home')
+    +navLink('/study-nursing-in-germany.html','Study Nursing')
+    +navLink('/work-in-germany.html','Work in Germany')
+    +navLink('#cta','Contact US')
+    <li>
+      <a href="https://api.whatsapp.com/send?phone=4915254279017">
+      <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp
+      </a>
+    </li>

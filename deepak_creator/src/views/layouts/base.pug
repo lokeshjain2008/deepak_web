@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+  include ../templates/header
+  body 
+    #page-wrapper
+      #header
+        h1
+          a(href="index.html")
+            <picture>
+              <source media="(min-width: 799px)" srcset="/assets/images/logo-new-desktop.png">
+              <source media="(max-width: 800px)" srcset="/assets/images/logo-new-mobile.png">
+              <img src="/assets/images/logo-new-mobile.png" class="mobile-image" alt="Chris standing up holding his daughter Elva">
+            </picture>
+        block link
+          include ../templates/navigation
+
+      block banner
+
+      block main
+
+      include ../templates/contactUs
+      include ../templates/footer
