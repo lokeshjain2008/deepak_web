@@ -60,7 +60,7 @@ var destination = './dist/assets/';
  
 gulp.task("copyAssets",()=>{
    gulp
-    .src('./src/assets/images/*')
+    .src('./src/assets/images/**/*')
     .pipe(gulp.dest(destination+'/images'))
     
     gulp
@@ -74,9 +74,6 @@ gulp.task("copyAssets",()=>{
     gulp
     .src(['CNAME', 'robot.txt', 'sitemap.xml'])
     .pipe(gulp.dest('./dist'))
-
-
-
 })
 
 ///////////////// Build--- Tasks /////////////
